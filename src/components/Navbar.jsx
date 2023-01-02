@@ -1,6 +1,5 @@
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { logo } from "../utils/contants";
 import SearchBar from "./SearchBar";
 
 export default function Navbar() {
@@ -17,7 +16,11 @@ export default function Navbar() {
       }}
     >
       <Link to="/" style={{ display: "flex", alignItem: "center" }}>
-        <img src={logo} alt="logo" height={45} />
+        <Typography
+          sx={{ color: "#65F4AC", fontWeight: 700, fontSize: "25px" }}
+        >
+          My Tube
+        </Typography>
       </Link>
       <SearchBar />
     </Stack>

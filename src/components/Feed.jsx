@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import { borderRight } from "@mui/system";
 import { Sidebar, Videos } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-const axios = require("axios");
 
 export default function Feed() {
   const [selectedCategory, setSelectedCategory] = useState("New");
@@ -46,7 +44,7 @@ export default function Feed() {
           mb={2}
           sx={{ color: "white" }}
         >
-          {selectedCategory} <span style={{ color: "#FC1503" }}>videos</span>
+          {selectedCategory} <span style={{ color: "#65F4AC" }}>Videos</span>
         </Typography>
 
         <Videos videos={videos} />

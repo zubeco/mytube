@@ -16,13 +16,13 @@ export default function Sidebar({ selectedCategory, setSelectedCategory }) {
           className="category-btn"
           onClick={() => setSelectedCategory(category.name)}
           style={{
-            background: category.name === selectedCategory && "#FC1503",
+            background: category.name === selectedCategory && "#65F4AC",
             color: "white",
           }}
         >
           <span
             style={{
-              color: category.name === selectedCategory ? "white" : "red",
+              color: category.name === selectedCategory ? "white" : "#65F4AC",
               marginRight: "15px",
             }}
           >

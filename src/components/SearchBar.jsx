@@ -23,7 +23,7 @@ export default function SearchBar() {
       onSubmit={handleSubmit}
       sx={{
         borderRadius: 20,
-        border: "1px solid #e3e3e3",
+        border: "1px solid #65F4AC",
         pl: 2,
         boxShadow: "none",
         mr: { sm: 5 },
@@ -35,7 +35,7 @@ export default function SearchBar() {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <IconButton type="submit" sx={{ p: "10px", color: "red" }}>
+      <IconButton type="submit" sx={{ p: "10px", color: "#65F4AC" }}>
         <Search />
       </IconButton>
     </Paper>
